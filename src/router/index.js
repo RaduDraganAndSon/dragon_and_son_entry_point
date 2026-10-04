@@ -4,6 +4,7 @@ import AboutView from '../views/AboutView.vue'
 import ShopView from '../views/ShopView.vue'
 import ServicesView from '../views/ServicesView.vue'
 import ContactView from '../views/ContactView.vue'
+import NotFoundView from '../views/NotFoundView.vue'
 
 const routes = [
   { path: '/', name: 'home', component: HomeView },
@@ -11,6 +12,7 @@ const routes = [
   { path: '/shop', name: 'shop', component: ShopView },
   { path: '/services', name: 'services', component: ServicesView },
   { path: '/contact', name: 'contact', component: ContactView },
+  { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFoundView },
 ]
 
 const router = createRouter({
