@@ -12,9 +12,9 @@
           <div class="info-panel p-4 mt-4">
             <h3 class="h4 mb-3">Visit or call</h3>
             <ul class="list-unstyled mb-0 lead-text">
-              <li><strong>Shop:</strong> 152 Ridge Avenue, Portland, OR</li>
-              <li><strong>Phone:</strong> (503) 555-0148</li>
-              <li><strong>Email:</strong> hello@velocitybikes.com</li>
+              <li><strong>Shop:</strong> {{ storeDetails.address }}</li>
+              <li><strong>Phone:</strong> {{ storeDetails.phone }}</li>
+              <li><strong>Email:</strong> {{ storeDetails.email }}</li>
             </ul>
           </div>
         </div>
@@ -58,3 +58,11 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { storeToRefs } from 'pinia'
+import { useShopStore } from '../stores/shopStore'
+
+const shopStore = useShopStore()
+const { storeDetails } = storeToRefs(shopStore)
+</script>

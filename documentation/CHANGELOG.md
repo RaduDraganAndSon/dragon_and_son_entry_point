@@ -19,6 +19,8 @@ hom
 - add a 404 page template 
 - build pipeline
 - extract hero
+- extract about
+- update contact page
 
 ### Todo
 - Add firebase support
