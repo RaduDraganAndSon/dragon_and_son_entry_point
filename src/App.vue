@@ -44,24 +44,19 @@
       <router-view />
     </main>
 
-    <footer class="footer py-4 bg-dark text-white">
-      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-        <div>
-          <h5 class="mb-1">{{ storeDetails.name }}</h5>
-          <small>{{ storeDetails.tagline }}</small>
-        </div>
-        <div class="text-md-end">
-          <div>152 Ridge Avenue, Portland, OR</div>
-          <div>(503) 555-0148</div>
-        </div>
-      </div>
-    </footer>
+    <SiteFooter
+      :store-name="storeDetails.name"
+      :tagline="storeDetails.tagline"
+      :address="storeDetails.address"
+      :phone="storeDetails.phone"
+    />
   </div>
 </template>
 
 <script setup>
 import { storeToRefs } from 'pinia'
 import { useShopStore } from './stores/shopStore'
+import SiteFooter from './common/SiteFooter.vue'
 
 const shopStore = useShopStore()
 const { storeDetails } = storeToRefs(shopStore)
