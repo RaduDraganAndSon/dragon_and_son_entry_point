@@ -6,7 +6,7 @@
           <span class="section-label">Who we are</span>
           <h1 class="section-title">Built by riders, for riders.</h1>
           <p class="lead-text">
-            Since opening our doors, Velocity Bikes has helped cyclists of every level get more from every ride.
+            Since opening our doors, {{ storeDetails.name }} has helped cyclists of every level get more from every ride.
             We blend product expertise, technical shop knowledge, and local hospitality to create a store experience that feels personal.
           </p>
           <p class="lead-text">
@@ -48,3 +48,11 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { storeToRefs } from 'pinia'
+import { useShopStore } from '../stores/shopStore'
+
+const shopStore = useShopStore()
+const { storeDetails } = storeToRefs(shopStore)
+</script>

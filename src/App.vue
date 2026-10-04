@@ -2,7 +2,7 @@
   <div class="app-shell">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
       <div class="container">
-        <router-link class="navbar-brand fw-bold" to="/">Velocity Bikes</router-link>
+        <router-link class="navbar-brand fw-bold" to="/">{{ storeDetails.name }}</router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,8 +47,8 @@
     <footer class="footer py-4 bg-dark text-white">
       <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
         <div>
-          <h5 class="mb-1">Velocity Bikes</h5>
-          <small>Premium bikes for city, trail, and everyday adventure.</small>
+          <h5 class="mb-1">{{ storeDetails.name }}</h5>
+          <small>{{ storeDetails.tagline }}</small>
         </div>
         <div class="text-md-end">
           <div>152 Ridge Avenue, Portland, OR</div>
@@ -58,3 +58,11 @@
     </footer>
   </div>
 </template>
+
+<script setup>
+import { storeToRefs } from 'pinia'
+import { useShopStore } from './stores/shopStore'
+
+const shopStore = useShopStore()
+const { storeDetails } = storeToRefs(shopStore)
+</script>

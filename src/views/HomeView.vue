@@ -29,7 +29,7 @@
             <span class="section-label">About us</span>
             <h2 class="section-title">Your neighborhood bike specialists.</h2>
             <p class="lead-text">
-              Velocity Bikes brings together performance design, local expertise, and a rider-first experience.
+              {{ storeDetails.name }} brings together performance design, local expertise, and a rider-first experience.
               Whether you need a commuter setup, mountain-ready trail bike, or a tune-up before your next ride,
               our team is here to help you move faster and ride more confidently.
             </p>
@@ -96,7 +96,7 @@
               src="https://www.google.com/maps?q=Portland%20Bike%20Shop&output=embed"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Google map to Velocity Bikes"
+              :title="`Google map to ${storeDetails.name}`"
             ></iframe>
           </div>
           <div class="col-lg-6">
@@ -117,3 +117,11 @@
     </section>
   </div>
 </template>
+
+<script setup>
+import { storeToRefs } from 'pinia'
+import { useShopStore } from '../stores/shopStore'
+
+const shopStore = useShopStore()
+const { storeDetails } = storeToRefs(shopStore)
+</script>
