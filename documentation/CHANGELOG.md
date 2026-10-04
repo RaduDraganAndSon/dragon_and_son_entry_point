@@ -15,6 +15,8 @@
 - Sort out how the folder structure needs to look for the documentation
 - split google maps feature and update the data
 - extract footer from the app to a common file
+- add a 404 page
+- build pipeline
 
 ### Todo
 - Add firebase support
