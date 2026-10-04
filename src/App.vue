@@ -20,20 +20,8 @@
             <li class="nav-item">
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/about">About</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/shop">Shop</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/services">Services</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" to="/contact">Contact</router-link>
-            </li>
             <li class="nav-item ms-lg-3">
-              <router-link class="btn btn-primary rounded-pill px-3" to="/contact">Book a Ride</router-link>
+              <router-link class="btn btn-primary rounded-pill px-3" to="/contact">Contact</router-link>
             </li>
           </ul>
         </div>

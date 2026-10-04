@@ -24,7 +24,7 @@ const props = defineProps({
   },
   mapQuery: {
     type: String,
-    default: 'Portland Bike Shop',
+    required: true,
   },
 })
 

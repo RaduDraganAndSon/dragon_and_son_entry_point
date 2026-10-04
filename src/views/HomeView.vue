@@ -6,7 +6,7 @@
 
     <VisitShopMap
       :store-name="storeDetails.name"
-      :map-query="storeDetails.address"
+      :map-query="storeDetails.name + ' ' + storeDetails.address"
     />
   </div>
 </template>

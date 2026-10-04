@@ -13,8 +13,7 @@
             Premium bikes, custom fitting, and expert repairs for commuters, racers, and weekend explorers.
           </p>
           <div class="d-flex flex-wrap gap-3 mt-4">
-            <router-link class="btn btn-primary btn-lg rounded-pill px-4" to="/shop">Shop Bikes</router-link>
-            <router-link class="btn btn-outline-light btn-lg rounded-pill px-4" to="/services">Explore Services</router-link>
+            <router-link class="btn btn-primary btn-lg rounded-pill px-4" to="/contact">Contact Us</router-link>
           </div>
         </div>
       </div>

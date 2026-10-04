@@ -21,6 +21,10 @@ hom
 - extract hero
 - extract about
 - update contact page
+- hide service page
+- hide about page
+- hide shop page
+- update footer
 
 ### Todo
 - Add firebase support
