@@ -82,45 +82,17 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="text-center mb-5">
-          <span class="section-label">Visit us</span>
-          <h2 class="section-title">Find our shop</h2>
-        </div>
-
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-6">
-            <iframe
-              class="map-frame"
-              src="https://www.google.com/maps?q=Portland%20Bike%20Shop&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              :title="`Google map to ${storeDetails.name}`"
-            ></iframe>
-          </div>
-          <div class="col-lg-6">
-            <div class="info-panel p-4 p-lg-5">
-              <h3 class="mb-3">Stop by the shop</h3>
-              <p class="lead-text mb-4">
-                Visit us in person for fittings, wrench time, and a full day of cycling inspiration.
-              </p>
-              <ul class="list-unstyled lead-text mb-0">
-                <li><strong>Address:</strong> 152 Ridge Avenue, Portland, OR</li>
-                <li><strong>Hours:</strong> Mon-Sat: 9am - 6pm</li>
-                <li><strong>Phone:</strong> (503) 555-0148</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <VisitShopMap
+      :store-name="storeDetails.name"
+      :map-query="storeDetails.address"
+    />
   </div>
 </template>
 
 <script setup>
 import { storeToRefs } from 'pinia'
 import { useShopStore } from '../stores/shopStore'
+import VisitShopMap from '../features/VisitShopMap.vue'
 
 const shopStore = useShopStore()
 const { storeDetails } = storeToRefs(shopStore)

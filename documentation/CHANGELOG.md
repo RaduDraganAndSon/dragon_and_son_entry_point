@@ -13,7 +13,8 @@
 [4/10/2026]
 - Add a data store
 - Sort out how the folder structure needs to look for the documentation
-
+- split google maps feature and update the data
+- extract footer from the app to a common file
 
 ### Todo
 - Add firebase support

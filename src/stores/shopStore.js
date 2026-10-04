@@ -4,10 +4,10 @@ export const useShopStore = defineStore('shopStore', {
   state: () => ({
     storeDetails: {
       name: 'Dragon & Son',
-      tagline: 'Premium bikes for city, trail, and everyday adventure.',
-      address: '152 Ridge Avenue, Portland, OR',
-      phone: '(503) 555-0148',
-      email: 'hello@dragonandsonbikes.com',
+      tagline: 'We are a repair cafe with a eye for custom builds. We are known for bike builds, my gigantic neon yellow cargo bike might have something to do with it.',
+      address: 'dragon and son, Bennekelstraat 112, 5654 DJ Eindhoven',
+      phone: '0648459980',
+      email: 'radu.dragan@dragon-and-son.com',
       website: 'https://dragon-and-son.com/',
     },
   }),
