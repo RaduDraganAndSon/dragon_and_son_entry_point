@@ -4,11 +4,9 @@
       <div class="row g-4 align-items-center">
         <div class="col-lg-6">
           <span class="section-label">About us</span>
-          <h2 class="section-title">Your neighborhood bike specialists.</h2>
+          <h2 class="section-title">Your neighborhood bike repair cafe.</h2>
           <p class="lead-text">
-            {{ storeName }} brings together performance design, local expertise, and a rider-first experience.
-            Whether you need a commuter setup, mountain-ready trail bike, or a tune-up before your next ride,
-            our team is here to help you move faster and ride more confidently.
+            Hi, my name is Radu Dragan. Almost all repairs here at  cost only the price of the parts.<br> We understand how important having a means of transportation is for people who can’t afford expensive repairs.
           </p>
           <div class="row g-3 mt-2">
             <div class="col-sm-6">
