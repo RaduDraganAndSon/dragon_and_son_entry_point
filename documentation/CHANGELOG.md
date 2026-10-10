@@ -27,9 +27,10 @@ hom
 - update footer
 - update hero text and background
 - About section image grid feature
-
+- Social media feature tied to the store
 
 ### Todo
+- finish the section image grid feature
 - Add firebase support
 - Add social media links
 - split based on features
