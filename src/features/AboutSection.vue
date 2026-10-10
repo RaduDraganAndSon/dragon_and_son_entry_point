@@ -1,12 +1,13 @@
 <template>
   <section class="section bg-light">
     <div class="container">
-      <div class="row g-4 align-items-center">
+      <div class="row g-4 align-items-top">
         <div class="col-lg-6">
           <span class="section-label">About us</span>
           <h2 class="section-title">Your neighborhood bike repair cafe.</h2>
           <p class="lead-text">
-            Hi, my name is Radu Dragan. Almost all repairs here at  cost only the price of the parts.<br> We understand how important having a means of transportation is for people who can’t afford expensive repairs.
+            Hi, my name is Radu Dragan. Almost all the repairs here at {{ storeName }} cost only the price of the parts. <br>
+            We understand how important having a means of transportation is for people who can't afford expensive repairs.
           </p>
           <div class="row g-3 mt-2">
             <div class="col-sm-6">
@@ -24,33 +25,8 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="info-panel p-4 p-lg-5">
-            <div class="row g-4">
-              <div class="col-md-6">
-                <div class="feature-card h-100">
-                  <h5>Custom fitting</h5>
-                  <p class="mb-0 text-muted">We adjust saddle, reach, and frame geometry for comfort and power.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="feature-card h-100">
-                  <h5>Bike maintenance</h5>
-                  <p class="mb-0 text-muted">Tune-ups and repairs to keep every ride smooth and safe.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="feature-card h-100">
-                  <h5>Premium gear</h5>
-                  <p class="mb-0 text-muted">Helmets, lights, apparel, and accessories from trusted brands.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="feature-card h-100">
-                  <h5>Guided advice</h5>
-                  <p class="mb-0 text-muted">Helpful recommendations for every budget and riding style.</p>
-                </div>
-              </div>
-            </div>
+          <div class="image-grid-panel">
+            <ImageGrid :rows="3" :columns="4" />
           </div>
         </div>
       </div>
@@ -59,6 +35,8 @@
 </template>
 
 <script setup>
+import ImageGrid from './ImageGrid.vue'
+
 defineProps({
   storeName: {
     type: String,
@@ -66,3 +44,13 @@ defineProps({
   },
 })
 </script>
+
+<style scoped>
+.image-grid-panel {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 1.25rem;
+  padding: 1rem;
+  box-shadow: 0 24px 50px rgba(15, 23, 42, 0.08);
+}
+</style>

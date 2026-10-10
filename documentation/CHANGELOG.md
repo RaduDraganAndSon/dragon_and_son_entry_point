@@ -26,6 +26,7 @@ hom
 - hide shop page
 - update footer
 - update hero text and background
+- About section image grid feature
 
 
 ### Todo
