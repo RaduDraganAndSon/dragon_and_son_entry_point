@@ -25,6 +25,8 @@ hom
 - hide about page
 - hide shop page
 - update footer
+- update hero text and background
+
 
 ### Todo
 - Add firebase support

@@ -1,9 +1,7 @@
 <template>
   <div>
     <HeroSection />
-
     <AboutSection  v-show="true" :store-name="storeDetails.name" />
-
     <VisitShopMap
       :store-name="storeDetails.name"
       :map-query="storeDetails.name + ' ' + storeDetails.address"
